@@ -1,0 +1,35 @@
+input-view {
+  match: TextLibRequest(this)
+  message(Enter the original string to compare against, for example 'cheese burger')
+  render {
+    
+    form {
+      on-submit {
+        goal: TextLibRequest
+        value: TextLibRequest {
+          textLibInput1: viv.core.FormElement(input1)
+          textLibInput2: viv.core.FormElement(input2)
+        }
+      }
+      
+      elements {
+        
+         text-input {
+          id(input2)
+          type (TextLibInput2)
+          label(Enter the original string you'll compare against)
+          value("#{raw(this.textLibInput2)}")
+        }
+        text-input {
+          id(input1)
+          type (TextLibInput1)
+          label(Enter a different but 'similar' string to see how close they are)
+          value("#{raw(this.textLibInput1)}")
+        }
+        
+        
+      }
+    }
+    
+  }
+}

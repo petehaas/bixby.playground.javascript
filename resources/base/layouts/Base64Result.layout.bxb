@@ -1,0 +1,42 @@
+layout {
+  match: Base64Result (this)
+  mode (Details)
+  
+  content {
+    section {
+      content {
+        single-line {
+          text { value (These are your results)}
+        }
+      }
+    }
+    
+    section {
+      content {
+        image {  url(http://petehaas.com/resources/playground/Base64Result.png)}
+      }
+    }
+    
+    section {
+      content {
+        single-line {
+          text { value ("Input:   #{value(this.originalString)}") }
+        }
+        
+        single-line {
+          text {  value ("EncodingType:   #{value(this.encodeOrDecode)}")
+          }
+        }
+         single-line {
+          text {  value ("Output:   #{value(this.result)}")
+          }
+         
+        }
+        paragraph {
+          value(Open the debugger to see how this works.  )
+        }
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+action (GetConfig) {
+  type(Search)
+  description (get the value from the config setting)
+  output (ConfigResult)
+}

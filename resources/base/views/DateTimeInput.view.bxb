@@ -1,0 +1,16 @@
+input-view {
+  match:  time.Date(this)
+  message(Please select a valid date)
+  render {
+    
+    date-picker {
+      initial-value (now().date)
+      restrictions {
+       // allow selection of days from two days before today
+        min-allowed ("subtractDuration(now().date, 'P2D')")
+        // to two days after
+        max-allowed ("addDuration(now().date, 'P2D')")
+      }
+    }
+  }
+}

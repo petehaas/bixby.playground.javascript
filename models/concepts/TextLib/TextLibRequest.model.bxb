@@ -1,0 +1,11 @@
+structure (TextLibRequest) {
+  description (Request object sent to textLib)
+  property (textLibInput1) {
+    type (TextLibInput1)
+    min (Required) max (One)
+  }
+  property (textLibInput2) {
+    type (TextLibInput2) 
+    min (Required) max (One)  
+  }
+}

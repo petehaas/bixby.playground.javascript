@@ -1,0 +1,13 @@
+action (GetTextLib) {
+  type(Search)
+  description (run calculations based on input)
+  collect {
+    input (textLibRequest) {
+      type (TextLibRequest)
+      min (Required) max (One)
+    }
+    
+  }
+  
+  output (TextLibResult)
+}

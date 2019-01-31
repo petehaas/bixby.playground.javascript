@@ -1,0 +1,23 @@
+action (GetDates) {
+ type(Search)
+  collect {
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Required) max (One)
+      default-init {
+        intent {
+                goal: time.DateTimeExpression
+                 value: time.DateTimeExpression {
+                 date:
+                        time.Date {
+                        year: time.Year(2019)
+                        month: time.Month(01)
+                        day: time.Day(22)
+                    }
+                 }
+             }
+         }
+    }
+  }
+  output (time.DateTimeExpression)
+}

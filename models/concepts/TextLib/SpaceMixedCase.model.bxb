@@ -1,0 +1,3 @@
+text (SpaceMixedCase) {
+  description (result from textLib.spaceMixedCase)
+}

@@ -1,0 +1,5 @@
+enum (Base64Options) {
+  description (User selects encode or decode)
+  symbol (Encode)
+  symbol (Decode)
+}

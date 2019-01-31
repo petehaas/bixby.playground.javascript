@@ -1,0 +1,22 @@
+capsule {
+  id (playground.javascript)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  
+  capsule-imports {
+  
+   
+    import (viv.entity) { 
+      as (entity) version (3.11.13)
+    }
+     import (viv.time) {as (time) version (2.61.12)}
+    import (viv.image) {
+      as (image) version-from (entity)
+    }
+    
+  }
+
+}

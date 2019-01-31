@@ -1,0 +1,26 @@
+endpoints {
+  authorization {
+    none
+   
+  }
+
+  action-endpoints {
+    action-endpoint (GetBase64) {
+      accepted-inputs (input1,input2)
+      local-endpoint (sampleBase64.js)
+    }
+    action-endpoint (GetConfig) {
+      local-endpoint (sampleConfig.js)
+    }
+    action-endpoint (GetDates) {
+      accepted-inputs (dateTimeExpression)
+      local-endpoint (sampleDates.js)
+    }
+    action-endpoint (GetTextLib) {
+      accepted-inputs (textLibRequest)
+      local-endpoint (sampleTextLib.js)
+    }
+
+   
+  }
+}

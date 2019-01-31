@@ -1,0 +1,19 @@
+input-view {
+  match: Base64Options(this)
+
+  message(Do you want to encode or decode?)
+
+
+  render {
+    selection-of (this) {
+      where-each (one) {
+        single-line {
+          text { value("#{value(one)}")}
+        }
+      }
+    }
+  }
+
+}
+
+

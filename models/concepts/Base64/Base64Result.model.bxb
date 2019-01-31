@@ -1,0 +1,19 @@
+structure (Base64Result) {
+  description (result from base 64)
+  property (originalString) {
+    type (Base64Input)
+    min (Required) max (One)
+  }
+   property (encodeOrDecode) {
+    type (Base64Options)
+    min (Required) max (One)
+  }
+  //  property (resultImage) {
+  //   type (viv.core.url)
+  //   min (Optional) max (One)
+  // }
+   property (result) {
+    type (Base64Output)
+    min (Required) max (One)
+  }
+}

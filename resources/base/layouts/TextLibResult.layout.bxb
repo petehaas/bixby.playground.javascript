@@ -1,0 +1,62 @@
+layout {
+  match: TextLibResult (this)
+  mode (Details)
+  
+  content {
+    section {
+      content {
+        single-line {
+          text { value ("#{value(this)}")}
+        }
+      }
+    }
+    
+    section {
+      content {
+        
+        image {
+          size (L)
+          object-fit (Cover)
+          url(http://petehaas.com/resources/playground/TextLibResult.png)}
+        
+      }
+    }
+    
+    section {
+      
+      content {
+        
+        paragraph {value ("Original String:   #{value(this.originalString)}")}
+       
+        divider 
+          
+        paragraph { value ("String to Compare: #{value(this.stringToCompare)}") }
+        
+        divider
+        
+        paragraph { value ("Fuzzy Match?: #{value(this.fuzzyMatch)}") }
+         
+        divider
+        
+        paragraph { value ("Levenshtein Distance: #{value(this.levenshteinDistance)}") }
+          
+        divider
+        
+        paragraph{ value ("Space Mixed Case: #{value(this.spaceMixedCase)}") }
+          
+        divider
+        
+        paragraph{ value ("Stem All Words: #{value(this.stemAllWords)}") }
+         
+        divider
+        
+        paragraph{ value ("Strip Html: #{value(this.stripHtml)}") }
+        
+        divider
+        
+        paragraph { value(Open the debugger to see how this works.  )}
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+text (StripHtml) {
+  description (Result returned from textLib.stripHtml)
+}

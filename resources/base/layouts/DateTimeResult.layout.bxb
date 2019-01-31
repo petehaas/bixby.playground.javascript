@@ -1,0 +1,60 @@
+layout {
+  match: time.DateTimeExpression (this)
+  mode (Details)
+  
+  content {
+    section {
+      content {
+        single-line {
+          text { value ("#{value(this)}")}
+        }
+      }
+    }
+    
+    section {
+      content {
+        
+        image {
+          size (L)
+          object-fit (Cover)
+          url(http://petehaas.com/resources/playground/DateResult.png)}
+        
+      }
+    }
+    
+    section {
+      
+      content {
+         if (exists(this.dateTimeInterval.start)) {
+        
+          single-line {
+              text { value ("Start:   #{value(this.dateTimeInterval.start)}") }
+            }
+          
+        }
+          
+          if (exists(this.date.month)) {
+          
+          single-line {
+            text { value ("Date: #{value(this.date.month)} #{value(this.date.day)}, #{value(this.date.year)}")}
+          }
+          
+        }
+          
+        
+       if (exists(this.dateTimeInterval.end)) {
+         
+         single-line {
+            text { value ("End:   #{value(this.dateTimeInterval.end)}") }
+          }
+          
+        }
+      
+        paragraph {
+          value(Open the debugger to see how this works.  )
+        }
+        
+      }
+    }
+  }
+}

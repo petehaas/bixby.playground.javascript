@@ -1,0 +1,33 @@
+action (GetBase64) {
+  type(Search)
+  description (take an input string and encode or decode it)
+  collect {
+    input (input1) {
+      type (Base64Input)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal {Base64Input}
+          value-set: Base64Input {
+            Base64Input(just a regular text string)
+            Base64Input(another text value)
+          }
+        }
+      }
+    }
+    input (input2) {
+      type (Base64Options)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal {Base64Options}
+          value-set: Base64Options  {
+            Base64Options(Encode)
+            Base64Options(Decode)
+          }
+        } 
+      }
+    }
+  }
+  output (Base64Result)
+}

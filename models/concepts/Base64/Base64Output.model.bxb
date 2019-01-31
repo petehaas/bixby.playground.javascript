@@ -1,0 +1,3 @@
+text (Base64Output) {
+  description (Result from Base64 encoding or decoding)
+}

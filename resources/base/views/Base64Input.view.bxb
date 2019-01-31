@@ -1,0 +1,13 @@
+input-view {
+  match: Base64Input (this)
+  message(Please select a string value to encode or decode to base64)
+  render {
+    selection-of (this) {
+      where-each (one) {
+        single-line {
+          text { value("#{value(one)}")}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+structure (DateTimeExpressionInput) {
+  extends (time.DateTimeExpression)
+}

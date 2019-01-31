@@ -1,0 +1,3 @@
+text (TextLibInput2) {
+  description (Second input string)
+}

@@ -1,0 +1,32 @@
+structure (TextLibResult) {
+  description (Calculated results)
+  
+  property (originalString) {
+    type (TextLibInput1)
+    min (Required) max (One)
+  }
+  property (stringToCompare) {
+    type (TextLibInput2)
+    max (One) min (Required)
+  }
+  property (fuzzyMatch) {
+    type (FuzzyMatch)
+    min (Required) max (One)
+  }
+  property (levenshteinDistance) {
+    type (LevenshteinDistance)
+    min (Required) max (One)
+  }
+  property (spaceMixedCase) {
+    type (SpaceMixedCase)
+    max (One) min (Required)
+  }
+  property (stemAllWords) {
+    type (StemAllWords)
+    max (Many) min (Required)
+  }
+  property (stripHtml) {
+    type (StripHtml)
+    max (One) min (Required)
+  }
+}

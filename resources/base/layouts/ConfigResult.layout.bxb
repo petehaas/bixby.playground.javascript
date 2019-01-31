@@ -1,0 +1,38 @@
+layout {
+  match: ConfigResult (this)
+  mode (Details)
+  
+  content {
+    section {
+      content {
+        single-line {
+          text { value (This is returned from the config file)}
+        }
+      }
+    }
+    
+    section {
+      content {
+        
+        image {
+          size (S)
+          object-fit (Cover)
+          url(http://petehaas.com/resources/playground/ConfigResult.png)}
+        
+      }
+    }
+    
+    section {
+      content {
+        single-line {
+          text { value ("Config:   #{value(this)}") }
+        }
+        
+        paragraph {
+          value(Open the debugger to see how this works.  )
+        }
+        
+      }
+    }
+  }
+}

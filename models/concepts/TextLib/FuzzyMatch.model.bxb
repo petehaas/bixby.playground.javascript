@@ -1,0 +1,3 @@
+boolean  (FuzzyMatch) {
+  description (are the compared string similar)
+}

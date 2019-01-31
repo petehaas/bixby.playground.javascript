@@ -1,0 +1,3 @@
+text (StemAllWords) {
+  description (Array of words returned from textLib.steamAllWords)
+}

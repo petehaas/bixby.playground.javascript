@@ -1,0 +1,3 @@
+text (Base64Input) {
+  description (Any string input)
+}
