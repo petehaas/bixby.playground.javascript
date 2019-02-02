@@ -1,0 +1,3 @@
+data:
+  aligned: '[g:GetDates] Date (next weekend)[v:viv.time.DateTimeExpression]'
+type: intent

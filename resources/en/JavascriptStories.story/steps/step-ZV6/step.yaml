@@ -1,0 +1,4 @@
+data:
+  aligned: '[g:GetDates] Dates'
+label: Dates
+type: intent

@@ -1,0 +1,6 @@
+action (GetContext) {
+  type(Search)
+  description (Get VivContext)
+  
+  output (ContextResult)
+}

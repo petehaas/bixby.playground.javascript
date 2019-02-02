@@ -20,6 +20,10 @@ endpoints {
       accepted-inputs (textLibRequest)
       local-endpoint (sampleTextLib.js)
     }
+    action-endpoint (GetContext) {
+      accepted-inputs ($vivContext)
+      local-endpoint (sampleContext.js)
+    }
 
    
   }

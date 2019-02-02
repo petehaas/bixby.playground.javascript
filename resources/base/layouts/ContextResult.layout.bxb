@@ -1,0 +1,16 @@
+ layout {
+   match: ContextResult (this)
+   mode (Summary)
+  content {
+    section {
+      content {
+        thumbnail-card {
+          image-url(http://petehaas.com/resources/playground/ContextResult.png)
+          title-area { slot1 { text { value("#{value(this.contextKey)}: #{value(this.contextValue)}")}}}
+          image-object-fit (Cover)
+        }
+      }
+    }
+  }
+}
+

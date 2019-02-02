@@ -1,0 +1,15 @@
+data:
+  geo:
+    latitude: '37.334502'
+    longitude: '-121.890654'
+  time: '2019-02-02T18:37:32.155Z'
+  tz: America/Chicago
+steps:
+  step-ZV6:
+    step-0OB:
+      step-HGM: ~
+    step-JPS:
+      step-G9V:
+        step-K9J:
+          step-06O: ~
+version: 2

@@ -1,0 +1,3 @@
+data:
+  aligned: '[g:GetDates] Dates (next Tuesday)[v:time.DateTimeExpression]'
+type: intent

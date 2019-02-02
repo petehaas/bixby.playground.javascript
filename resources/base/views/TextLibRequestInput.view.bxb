@@ -17,13 +17,14 @@ input-view {
          text-input {
           id(input2)
           type (TextLibInput2)
-          label(Enter the original string you'll compare against)
+          label(Enter original string you'll compare against)
           value("#{raw(this.textLibInput2)}")
+         // placeholder-char()
         }
         text-input {
           id(input1)
           type (TextLibInput1)
-          label(Enter a different but 'similar' string to see how close they are)
+          label(Enter a 'similar' string to original)
           value("#{raw(this.textLibInput1)}")
         }
         

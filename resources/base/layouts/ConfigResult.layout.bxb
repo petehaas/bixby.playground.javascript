@@ -1,6 +1,6 @@
 layout {
   match: ConfigResult (this)
-  mode (Details)
+  mode (Summary)
   
   content {
     section {

@@ -5,9 +5,18 @@ action (GetTextLib) {
     input (textLibRequest) {
       type (TextLibRequest)
       min (Required) max (One)
+      prompt-behavior (AlwaysSelection)
+      default-init {
+        intent {
+          goal: TextLibRequest
+          value: TextLibRequest {
+            textLibInput1: TextLibInput1(cheeseburgerandfrys)
+            textLibInput2: TextLibInput2(CheeseburgerAndFries)
+          }
+         }
+        }
+      }
     }
-    
-  }
-  
+   
   output (TextLibResult)
 }

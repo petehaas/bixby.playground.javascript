@@ -1,0 +1,18 @@
+result-view {
+  match: Base64Result (this) 
+  render {
+    
+    list-of (this) {
+      where-each (item) {
+        layout-match (item)  {mode (Details)}
+      }
+    }
+    
+  }
+  
+  conversation-drivers {
+   
+    conversation-driver { template ("Config") }
+    conversation-driver { template ("TextLib") } 
+  }
+}

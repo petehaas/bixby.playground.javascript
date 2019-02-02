@@ -1,0 +1,11 @@
+result-view {
+  match: time.DateTimeExpression (this) 
+  render {
+    layout-match(this) { mode (Details)}
+  }
+  
+  conversation-drivers {
+    conversation-driver { template ("next weekend") }
+    conversation-driver { template ("tomorrow") }
+  }
+}

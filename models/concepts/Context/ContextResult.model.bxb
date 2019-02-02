@@ -1,0 +1,12 @@
+structure (ContextResult) {
+  
+  property (contextKey) {
+    type (ContextKey)
+    min (Required) max (One)
+  }
+  
+  property (contextValue) {
+    type (ContextValue)
+    min (Required) max (One)
+  }
+}

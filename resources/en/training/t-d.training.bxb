@@ -3,3 +3,13 @@ train (t-d5gn21oz0h0hyjuf03kuf0hyb) {
   plan (Y2BiUCrISaxML8ovzUvRy0osSyxOLsosKNFzzs9Ly0wPSi0uzSlhkMeuxj21BKKMgREIGaAYSAIA)
   last-modified (1548809096083)
 }
+train (t-dffkccxhsxmu2grwiwpo10kys) {
+  utterance ([g:GetTextLib] TextLib)
+  plan (Y2BmUC7ISaxML8ovzUvRy0osSyxOLsosKNELSa0o8clMCkotLs0pYVDArsg9tQSqjkGFgDGFpanFJQxMDIxAzAAkGRkYYDQA)
+  last-modified (1549131160954)
+}
+train (t-dr57ttqf53u1w7inuw079jpcx) {
+  utterance ("[g:GetDates] Date (next weekend)[v:time.DateTimeExpression]")
+  plan (Y2BmkC7LLNMrycxN1XNJLEkNATJcKwqKUouLM/PzGOQKchIr04vyS/NS9LISyxKLk4syC0r03FNLQIqL8WtmYmAEYgYgycgAAlA+AA==)
+  last-modified (1549133194816)
+}
