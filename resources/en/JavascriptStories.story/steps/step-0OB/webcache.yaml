@@ -15,55 +15,9 @@
       Connection: close
       Content-Length: '405'
       Content-Type: application/json
-      Date: 'Sat, 02 Feb 2019 18:46:04 GMT'
+      Date: 'Sat, 02 Feb 2019 18:55:13 GMT'
       Set-Cookie: >-
-        AWSALB=ZoKRiUlWfXNJxswkf46IyNlbti8T+u8UwBHims1QT+fs23DvS2icKcDLfHBIsB7rHqeR6s99sBHcT0A3F8eBI8ya8OWJLcXQHtzotz+wuptMMesdnlH+4Qlq5/S+;
-        Expires=Sat, 09 Feb 2019 18:46:04 GMT; Path=/
+        AWSALB=DkgqzqnT7Xi3A+mPlnUnszgHkdnhTQT/GAFvXYwMJKFEMB9eYtflEmEi40lzwGyfD8+9AExB/gjaP7LVQXbFy1SN4naOd/s6vx6x9VlIRyzBy5ol0cMs+42IXEg5;
+        Expires=Sat, 09 Feb 2019 18:55:13 GMT; Path=/
     responseFilename: webcache/prod-default-time-service.partner-int-1-res.json
-    status: 200
-- request:
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-2-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/resolve/explicit/date_time_interval
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '405'
-      Content-Type: application/json
-      Date: 'Sat, 02 Feb 2019 18:48:14 GMT'
-      Set-Cookie: >-
-        AWSALB=d3CnnEPz32V86wMJYc/+pRK4kmfv4VCfsFtoPa8pQOZWsMgBvXXQYjjipjzoZlSKliuFi5+FuuSSpHagYO3lXaGBC24X+Z7xfjCoimT8oekVRSvr5lq4QjS3O9/j;
-        Expires=Sat, 09 Feb 2019 18:48:14 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-2-res.json
-    status: 200
-- request:
-    headers:
-      Accept: application/json
-      Accept-Charset: UTF-8
-      Accept-Encoding: gzip
-      Content-Type: application/json
-      User-Agent: Mozilla/5.0 (compatible) gzip
-    method: POST
-    requestBodyFilename: webcache/prod-default-time-service.partner-int-3-req.json
-    url: >-
-      http://prod-default-time-service.partner-int/time/resolve/explicit/date_time_interval
-  response:
-    headers:
-      $status: HTTP/1.1 200 OK
-      Connection: close
-      Content-Length: '405'
-      Content-Type: application/json
-      Date: 'Sat, 02 Feb 2019 18:48:41 GMT'
-      Set-Cookie: >-
-        AWSALB=6eCElYX4Ydo0YY+nPWUfkENEZdciJ7QnsR7gacLEinUEB+NGQ9VM8CjAthbWP2vVHzBqJlWM1zDrnDX6dqhXGofrCCRUY3MV7d3kgyoCWKej16ewRwR1Kq/sPd75;
-        Expires=Sat, 09 Feb 2019 18:48:41 GMT; Path=/
-    responseFilename: webcache/prod-default-time-service.partner-int-3-res.json
     status: 200
